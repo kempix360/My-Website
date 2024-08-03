@@ -1,0 +1,68 @@
+* {
+    font-family: 'Poppins';
+}
+
+.introduction {
+    font-size: 2em;
+    color: #131313;
+    margin-left: 300px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #131313;
+}
+
+h2 {
+    font-size: 1em;
+    color: #1a1919;
+}
+
+
+.typing-container {
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .typing-text {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: 
+        typing 1s steps(20, end) forwards,
+        blink .8s infinite,
+        cursor-vanish 0s ease 4s forwards;
+  }
+
+  .typing-text-second {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    width: 0;
+    opacity: 0;
+    animation: 
+        typing-second 3s steps(30, end) forwards 4s,
+        blink .8s infinite 6s;
+}
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes typing-second {
+    from { width: 0; opacity: 1; }
+    to { width: 100%; opacity: 1; }
+}
+
+  @keyframes blink {
+    from { border-color: transparent }
+    to { border-color: white; }
+  }
+
+  @keyframes cursor-vanish {
+    from { border-color: white; }
+    to { border-color: transparent; }
+}
