@@ -33,13 +33,13 @@
   font-size: 1.5em;
   padding: 10px 20px;
   transition: color 0.3s ease;
-  background-color: #27185c;
+  background-color: #430e5c;
   border-radius: 15px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar-links a:hover {
-  background-color: #555;
+  background-color: #962ab1;
   color: #fff;
 }
 
